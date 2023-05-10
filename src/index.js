@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import _ from 'lodash';
 import './style.css';
 import Icon from './ellipsis-vertical-svgrepo-com.svg';
 import Icon2 from './recycle-svgrepo-com.svg';
