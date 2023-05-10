@@ -4,10 +4,11 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch",
-    "start": "webpack serve --open",
-    "build": "webpack"
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack build --open --config webpack.prod.js",
+    "build:dev": "webpack serve --open --config webpack.dev.js",
+    "build:prod": "webpack build  --config webpack.prod.js",
+    "build:watch": "webpack build --watch --open --config webpack.dev.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "eslint-plugin-import": "^2.27.5",
     "hint": "^7.1.8",
     "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "^2.7.5",
     "style-loader": "^3.3.2",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
@@ -30,6 +32,7 @@
     "webpack": "^5.82.0",
     "webpack-cli": "^5.1.0",
     "webpack-dev-server": "^4.15.0",
+    "webpack-merge": "^5.8.0",
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
