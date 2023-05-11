@@ -28,11 +28,31 @@ body {
   font-weight: normal;
 }
 
+textarea {
+  width: 50%;
+  border: none;
+  padding-top: 1.3em;
+  resize: none;
+}
+
 textarea:focus,
 input:focus {
   outline: none;
-  padding: 1em;
-  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.icon-font {
+  font-size: 15px;
+  width: 15px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.3em;
 }
 
 .write-task {

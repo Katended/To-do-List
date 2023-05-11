@@ -8,7 +8,7 @@
     "build": "webpack build --open --config webpack.prod.js",
     "build:dev": "webpack serve --open --config webpack.dev.js",
     "build:prod": "webpack build  --config webpack.prod.js",
-    "build:watch": "webpack build --watch --open --config webpack.dev.js"
+    "build:watch": "webpack build --watch --config webpack.dev.js"
   },
   "keywords": [],
   "author": "",
