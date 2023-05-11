@@ -1,21 +1,23 @@
 import Icon from '../images/ellipsis-vertical-svgrepo-com.svg';
 import Icon2 from '../images/recycle-svgrepo-com.svg';
 import Icon3 from '../images/enter-svgrepo-com.svg';
+import TaskStatus from './TaskStatus.js';
 
-class ToDo {
+class ToDo extends TaskStatus {
      todaysToDoList = [];
 
      placeholder = document.querySelector('.placeholder');
 
      todo = document.querySelector('input');
 
-     clearbtn = document.querySelector('.clear-button');
-
      constructor() {
+       super();
+
        const myIcon2 = new Image();
        myIcon2.src = Icon2;
        myIcon2.classList.add('recycle-icon');
        const whatToDo = document.querySelector('.what-to-do');
+
        whatToDo.append(myIcon2);
 
        const entericon = new Image();
@@ -79,9 +81,10 @@ class ToDo {
 
     createNewToDo = (item) => {
       const element = document.createElement('div');
+
       const cls = ['fa', 'fa-trash-o', 'icon-font'];
 
-      element.classList.add('task');
+      element.classList.add('task', 'active-item');
 
       element.addEventListener('click', () => {
         element.querySelector('.fa').style.display = (element.querySelector('.fa').style.display === 'none' ? 'block' : 'none');
@@ -93,6 +96,7 @@ class ToDo {
       const checkBox = document.createElement('input');
       checkBox.classList.add('check-box');
       checkBox.setAttribute('type', 'checkbox');
+      checkBox.setAttribute('data-index', item.index);
       element.appendChild(checkBox);
 
       const textarea = document.createElement('textarea');
@@ -123,6 +127,8 @@ class ToDo {
       element.appendChild(trashIcon);
 
       this.addToLocalStorage();
+
+      this.updateStatus(checkBox);
 
       return element;
     };
