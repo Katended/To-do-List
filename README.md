@@ -2,7 +2,7 @@
 <div align="center">
   
  
-  <h3><b>Awesome Books</b></h3>
+  <h3><b>Todo-List</b></h3>
 
 </div>
 
@@ -25,9 +25,9 @@
 
 
 
-# 📖 Mobile First Project <a name="about-project"></a>
+# 📖 ToDo-List Project <a name="about-project"></a>
 
-This project  is a simple website that displays a list of taskts and allows you to add and remove tasks from the list
+This project  is a simple website that displays a list of tasks and allows you to add and remove tasks from the list
 
 ## 🛠 Built With <a name="built-with"></a>
 
