@@ -64,7 +64,7 @@ class ToDo {
       this.todaysToDoList.forEach((item, index) => {
         if (index === objIndex) item.description = textarea.value;
       });
-      // this.todaysToDoList[objIndex].description = textarea.value;
+
       this.addToLocalStorage();
       this.display();
     };
@@ -90,13 +90,11 @@ class ToDo {
 
       this.placeholder.append(element);
 
-      // create input element
       const checkBox = document.createElement('input');
       checkBox.classList.add('check-box');
       checkBox.setAttribute('type', 'checkbox');
       element.appendChild(checkBox);
 
-      // create input element
       const textarea = document.createElement('textarea');
       textarea.value = item.description;
       textarea.setAttribute('data-index', item.index);
@@ -104,7 +102,6 @@ class ToDo {
 
       element.appendChild(textarea);
 
-      /// add icon
       const myIcon = new Image();
 
       myIcon.src = Icon;
