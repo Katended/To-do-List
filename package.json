@@ -1,7 +1,7 @@
 {
   "name": "to-do-list",
   "version": "1.0.0",
-  "description": "",
+  "description": "<a name=\"readme-top\"></a>\r <div align=\"center\">",
   "private": true,
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
@@ -39,5 +39,6 @@
     "lodash": "^4.17.21",
     "webpack-merge": "^5.8.0",
     "html-webpack-plugin": "^5.5.1"
-  }
+  },
+  "main": "webpack.common.js"
 }
