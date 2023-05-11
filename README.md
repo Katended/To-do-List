@@ -96,6 +96,7 @@ Open index.html using a live server.
 
 ### Deployment <a name="live-demo"></a>
 
+[Demo](https://katended.github.io/To-do-List/index.html)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
