@@ -94,7 +94,7 @@ Open index.html using a live server.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Deployment <a name="live-demo"></a>
+### You can Deploy the demo using the link below: <a name="live-demo"></a>
 
 [Demo](https://katended.github.io/To-do-List/index.html)
 
